@@ -14,7 +14,7 @@
 
 
 use strict;
-#use warnings;
+use warnings;
 
 open my $fh, '<', 'report.txt' or die "Cannot open file: $!\n";
 my $i = 0;
