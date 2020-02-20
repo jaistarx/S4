@@ -43,20 +43,14 @@ class calcWindow(Gtk.Window) :
 
         for buttonname in otherbuttons:
             buttonname.connect('clicked', self.buttonclicked)
-        
         digits=[button1 , button2 , button3 , button4 , button5 , button6 , button7 , button8 ,button9 , button0 , openbr , closebr ]
         for i in digits :
             i.connect('clicked',self.buttonclicked)
-        #connecting special buttons
         ans.connect('clicked',self.evaluate)
-        #ac.connect('clicked',clear)
         delete.connect('clicked',self.delsingle)
         clear.connect("clicked",self.cleartext)
-
         root.connect('clicked',self.froot)
-
         fact.connect('clicked',self.facto)
-
         sin.connect('clicked',self.sine)
         dot.connect('clicked',self.buttonclicked)
 
@@ -68,14 +62,11 @@ class calcWindow(Gtk.Window) :
         grid.attach_next_to(multiply,divide,Gtk.PositionType.BOTTOM,1,1)
         grid.attach_next_to(plus,multiply,Gtk.PositionType.BOTTOM,1,1)
         grid.attach_next_to(minus,plus,Gtk.PositionType.BOTTOM,1,1)
-        grid.attach_next_to(root,minus,Gtk.PositionType.LEFT,1,1)
-        grid.attach_next_to(fact,root,Gtk.PositionType.LEFT,1,1)
-        grid.attach(multiply, 3,4,1,1)
-        grid.attach(plus, 3,5,1,1)
-        grid.attach(minus, 3,6,1,1)
-        grid.attach(root, 2,6,1,1)
-        grid.attach(fact, 1,6,1,1)
-        grid.attach(ans, 0,6,4,1)
+        grid.attach_next_to(fact,minus,Gtk.PositionType.LEFT,1,1)
+        grid.attach_next_to(dot,fact,Gtk.PositionType.LEFT,1,1)
+        grid.attach_next_to(sin,dot,Gtk.PositionType.BOTTOM,1,1)
+        grid.attach_next_to(ans,fact,Gtk.PositionType.BOTTOM,2,1)
+        grid.attach_next_to(root,sin,Gtk.PositionType.LEFT,1,1)
 
         digit=[button1 , button2 , button3 , button4 , button5 , button6 , button7 , button8 ,button9 , button0 ]
         random.shuffle(digit)
