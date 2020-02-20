@@ -87,32 +87,6 @@ class calcWindow(Gtk.Window) :
             if(c==0):
                 r=r+1
 
-
-        # # grid.add(button9)
-        # # grid.attach(button8 , 1 , 0 , 1 , 1 )
-        # # grid.attach_next_to(button7,button8,Gtk.PositionType.RIGHT,1,1)
-        # # grid.attach_next_to(divide,button7,Gtk.PositionType.RIGHT,1,1)
-        # # grid.attach_next_to(button6,button9,Gtk.PositionType.BOTTOM,1,1)
-        # # grid.attach_next_to ( button5 , button6 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # # grid.attach_next_to ( button4 , button5 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # grid.attach_next_to ( multiply , button4 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # # grid.attach_next_to ( button3 , button6 ,Gtk.PositionType.BOTTOM, 1 , 1 )
-        # # grid.attach_next_to ( button2 , button3 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # # grid.attach_next_to ( button1 , button2 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # grid.attach_next_to (minus , button1 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # # grid.attach_next_to ( button0 , button3 ,Gtk.PositionType.BOTTOM, 1 , 1 )
-        # grid.attach_next_to ( dot , button0 ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # grid.attach_next_to ( root , dot ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # grid.attach_next_to ( plus , root ,Gtk.PositionType.RIGHT, 1 , 1 )
-        # grid.attach_next_to(openbr,button9 ,Gtk.PositionType.TOP, 1 , 1 )
-        # grid.attach_next_to(closebr, button8 ,Gtk.PositionType.TOP, 1 , 1 )
-        # grid.attach_next_to(clear, button7 ,Gtk.PositionType.TOP, 1 , 1 )
-        # grid.attach_next_to (delete, divide ,Gtk.PositionType.TOP, 1 , 1 )
-        # grid.attach_next_to (ans, button0 ,Gtk.PositionType.BOTTOM, 1 , 1 )
-        # grid.attach_next_to (fact, root ,Gtk.PositionType.BOTTOM, 1 , 1 )
-        # grid.attach_next_to (sin, plus ,Gtk.PositionType.BOTTOM, 1 , 1 )
-        # grid.attach_next_to (cos, ans ,Gtk.PositionType.RIGHT, 1 , 1 )
-
     def buttonclicked(self, button):
         text = self.entry.get_text()
         text = text+button.props.label
